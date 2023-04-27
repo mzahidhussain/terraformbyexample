@@ -21,3 +21,11 @@ output "ec2maps" {
     description = "ec2 with maps"
     value = {for d, ec2s in aws_instance.ec2: d => ec2s.public_dns}
 }
+
+/*
+output "azs" {
+    description = "availability Zones"
+    value = [for az in data.aws_availability_zones.azs: az.name ]
+
+}
+*/
