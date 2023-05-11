@@ -1,0 +1,5 @@
+https://developer.hashicorp.com/terraform/language/values/locals
+
+this is where locals files are used when needed to create an expression and use them several times in the 
+code .
+
