@@ -1,11 +1,11 @@
 locals {
 
-   tags =  {
-       
-      Name = "CarverTech-vpc"
-      Owner = "Murtaza Zahid"
-      Enviornment = "PROD"
-      }
+  tags = {
+
+    Name        = "CarverTech-vpc"
+    Owner       = "Murtaza Zahid"
+    Enviornment = "PROD"
+  }
 
 
 }
