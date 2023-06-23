@@ -31,7 +31,7 @@ module "vpc" {
   igw_tags                  = var.igw_tags
   nat_eip_tags              = var.nat_eip_tags
   vpc_tags                  = var.vpc_tags
-  #tags = var.tags
-  tags = local.tags # locals implementation testing using maps 
+  tags = var.tags
+  #tags = local.tags # locals implementation testing using maps 
 
 }
