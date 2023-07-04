@@ -1,16 +1,16 @@
 variable "availability_zone" {
-    default = "us-east-1b"
+  default = "us-east-1b"
 }
 
 
 variable "vpc_id" {
-    default = "vpc-03527475f6ad5a600"
-    description = "VPC Value"
+  default     = "vpc-09a9af01a8545ce38"
+  description = "VPC Value"
 }
 
 variable "project" {
   default = "carver-k8"
-  type = string 
+  type    = string
 }
 
 variable "tags" {
@@ -19,5 +19,13 @@ variable "tags" {
     Name        = "CarverTech-k8s"
     Owner       = "Murtaza Zahid"
     Enviornment = "DEV"
+  }
+}
+
+variable "instancetype" {
+  type = map(string)
+  default = {
+    "dev"   = "t3.small"
+    "stage" = "t3.small"
   }
 }
